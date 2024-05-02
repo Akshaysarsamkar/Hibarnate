@@ -1,5 +1,6 @@
 package com.annotationuse;
 
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -14,7 +15,6 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name="student_address")
 public class Address {
 	
 	@Id
@@ -108,6 +108,12 @@ public class Address {
 
 	public void setImage(byte[] image) {
 		this.image = image;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", city=" + city + ", street=" + street + ", isopen=" + isopen + ", adddate="
+				+ adddate + ", x=" + x + ", image=" + Arrays.toString(image) + "]";
 	}
 	
 	

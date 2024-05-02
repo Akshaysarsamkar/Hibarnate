@@ -4,8 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 
-import javax.imageio.stream.FileImageInputStream;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
