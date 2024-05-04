@@ -11,9 +11,8 @@
 		<property name="show_sql">true</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
-		<mapping class="com.annotationuse.Collage" />
-
-		<mapping class="com.annotationuse.Address" />
+		<mapping class="com.annotationuse.Car" />
+		
 	</session-factory>
 </hibernate-configuration>
 
