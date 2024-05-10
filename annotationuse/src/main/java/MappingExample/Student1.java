@@ -2,6 +2,7 @@ package MappingExample;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -13,6 +14,7 @@ public class Student1 {
 	private String cla;
 
 	@OneToOne
+	@JoinColumn(name="C_id")
 	private Certificate cer;
 
 	public Certificate getCer() {

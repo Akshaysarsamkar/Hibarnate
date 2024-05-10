@@ -10,14 +10,17 @@
 		<property name="hbm2ddl.auto">create</property>
 		<property name="show_sql">true</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-		<mapping class="com.annotationuse.First" />
-		<mapping class="com.annotationuse.Second" />
 
-		<mapping class="MappingExample.Student1" />
-		<mapping class="MappingExample.Certificate" />
 
-		<mapping class="com.annotationuse.Book" />
-		<mapping class="com.annotationuse.Student" />
+		<mapping class="MappingExample.Owner" />
+		<mapping class="MappingExample.Cars" />
+
+		
+		
+		
+		<mapping class="ManyToManyMapping.Person" />
+		<mapping class="ManyToManyMapping.Project" />
+		
 	</session-factory>
 </hibernate-configuration>
 

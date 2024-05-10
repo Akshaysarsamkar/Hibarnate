@@ -45,10 +45,6 @@ public class OneToOneBidirectionalMapping {
 	     System.out.println(stu1.getCer().getC_name());
 	     
 	     
-	     
-	     
-	     
-	     
 		session.close();
 		factory.close();
 
