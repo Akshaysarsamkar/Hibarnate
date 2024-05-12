@@ -10,18 +10,22 @@
 		<property name="hbm2ddl.auto">create</property>
 		<property name="show_sql">true</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-
+		<property name="format_sql">true</property>
 
 		<mapping class="MappingExample.Owner" />
 		<mapping class="MappingExample.Cars" />
 
-		
+
 		<mapping class="OneToManyMapping.Teacher" />
 		<mapping class="OneToManyMapping.Student" />
-		
+
 		<mapping class="ManyToManyMapping.Actors" />
 		<mapping class="ManyToManyMapping.Movie" />
-		
+
+
+		<mapping class="EagerAndLazyLodding.Shop" />
+		<mapping class="EagerAndLazyLodding.Person" />
+
 	</session-factory>
 </hibernate-configuration>
 
