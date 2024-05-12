@@ -16,10 +16,11 @@
 		<mapping class="MappingExample.Cars" />
 
 		
+		<mapping class="OneToManyMapping.Teacher" />
+		<mapping class="OneToManyMapping.Student" />
 		
-		
-		<mapping class="ManyToManyMapping.Person" />
-		<mapping class="ManyToManyMapping.Project" />
+		<mapping class="ManyToManyMapping.Actors" />
+		<mapping class="ManyToManyMapping.Movie" />
 		
 	</session-factory>
 </hibernate-configuration>
