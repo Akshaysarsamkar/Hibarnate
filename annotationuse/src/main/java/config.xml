@@ -23,6 +23,10 @@
 		<mapping class="ManyToManyMapping.Movie" />
 
 
+		<mapping class="PersistanceobjectLifeCycle.Parent" />
+		<mapping class="PersistanceobjectLifeCycle.Child" />
+
+
 		<mapping class="EagerAndLazyLodding.Shop" />
 		<mapping class="EagerAndLazyLodding.Person" />
 

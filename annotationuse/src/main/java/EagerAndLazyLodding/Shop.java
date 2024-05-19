@@ -60,10 +60,6 @@ public class Shop {
 		this.person = person;
 	}
 
-	@Override
-	public String toString() {
-		return "Shop [Sid=" + Sid + ", sname=" + sname + ", Address=" + Address + ", person=" + person + "]";
-	}
 	
 	
 	
