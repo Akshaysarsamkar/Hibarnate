@@ -8,7 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class CrudOperation {
+public class HQLDemoExample {
 
 	public static void main(String[] args) {
 
@@ -41,7 +41,7 @@ public class CrudOperation {
 		List<Student> stu = q.list();
 		
 		for(Student s1 : stu) {
-			System.out.println(s1.getSname() + " : " + s1.getC().getName());
+			System.out.println(s1.getSname() + " : " + s1.getC().getName() + " : " + s1.getSclass());
 		}
 
 		s.close();
