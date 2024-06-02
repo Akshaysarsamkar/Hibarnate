@@ -20,7 +20,7 @@ public class Mapping {
 		
 		Person p = new Person();
 		p.setAge(56);
-		p.setPid(1);
+		p.setPid(5);
 		p.setPname("Akshay");
 		
 		Laptop l = new Laptop();
@@ -30,7 +30,7 @@ public class Mapping {
 		
 		Laptop l1 = new Laptop();
 		l1.setLaptipname("Lenova");
-		l1.setLaptopid(203);
+		l1.setLaptopid(23);
 		
 		List<Laptop> laptoplist = new ArrayList<Laptop>();
 		laptoplist.add(l1);
@@ -47,12 +47,12 @@ public class Mapping {
 		
 		session.save(p);
 		session.save(l1);
-		session.save(l);
+		//session.save(l);
 		
 		t.commit();
 		
 		
-		Person lt = (Person)session.get(Person.class, 1);
+		Person lt = (Person)session.get(Person.class, 5);
 		
 	  for (Laptop lop : lt.getLaptop()) {
 		  System.out.println(lop.getLaptipname());

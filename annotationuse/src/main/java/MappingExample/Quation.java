@@ -11,7 +11,7 @@ public class Quation {
 	private int Quation_Id;
 	private String qua;
 	@OneToOne
-	private Answer ans;
+	private Answer answer;
 	
 	public Quation() {
 		super();
@@ -21,7 +21,7 @@ public class Quation {
 		super();
 		Quation_Id = quation_Id;
 		qua = quations1;
-		this.ans = ans;
+		this.answer = ans;
 	}
 	public int getQuation_Id() {
 		return Quation_Id;
@@ -36,10 +36,10 @@ public class Quation {
 		qua = quations1;
 	}
 	public Answer getAns() {
-		return ans;
+		return answer;
 	}
 	public void setAns(Answer ans) {
-		this.ans = ans;
+		this.answer = ans;
 	}
 
 }

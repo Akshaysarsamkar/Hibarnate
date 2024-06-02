@@ -12,10 +12,11 @@
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="format_sql">true</property>
 
-		
-
-		<mapping class="HQL.Student" />
+			<mapping class="HQL.Student" />
 		<mapping class="HQL.Certificate" />
+
+		<mapping class="MappingExample.Quation" />
+		<mapping class="MappingExample.Answer" />
 
 	</session-factory>
 </hibernate-configuration>

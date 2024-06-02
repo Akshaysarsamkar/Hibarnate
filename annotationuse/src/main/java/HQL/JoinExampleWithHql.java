@@ -3,16 +3,16 @@ package HQL;
 import java.util.Arrays;
 import java.util.List;
 
-import org.hibernate.Query;
+import org.hibernate.Query.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
-public class HqlJoinDemo {
+public class JoinExampleWithHql {
 
 	public static void main(String[] args) {
-		
+
 		Configuration cfg = new Configuration();
 		
 		cfg.configure("config.xml");
@@ -21,20 +21,19 @@ public class HqlJoinDemo {
 		
 		Session s = factory.openSession();
 		
+		String query = "select q.qua,q.Quation_Id,a.ans from Quation as q INNER JOIN q.answer as a";
 		
-		String q = "select p.pname,p.age,l.laptipname from Person as p INNER JOIN p.laptop as l";
+		Query q = s.createQuery(query);
 		
-		Query query = s.createQuery(q);
+		List<Object []> list = q.getResultList();
 		
-	    List<Object []> list  = query.getResultList();
-	    
-	    for(Object[] arr : list) {
-	    	System.out.println(Arrays.toString(arr));
-	    }
-	
+		for(Object [] l : list) {
+			System.out.println(Arrays.toString(l));
+		}
+		
 		s.close();
 		factory.close();
-
+		
 	}
 
 }
