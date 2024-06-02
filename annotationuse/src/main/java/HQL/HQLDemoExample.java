@@ -33,6 +33,7 @@ public class HQLDemoExample {
 //		s.save(stu);		
 //		t.commit();
 		
+		
 		String que = "from Student where sname=:name";
 		Query q = s.createQuery(que);
 		
@@ -40,10 +41,11 @@ public class HQLDemoExample {
 		
 		List<Student> stu = q.list();
 		
+		
 		for(Student s1 : stu) {
 			System.out.println(s1.getSname() + " : " + s1.getC().getName() + " : " + s1.getSclass());
 		}
-
+		
 		s.close();
 		f.close();
 
